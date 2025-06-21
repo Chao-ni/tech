@@ -1,0 +1,88 @@
+.gradio-container {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+footer {
+    visibility: hidden !important;
+}
+
+.custom-md {
+    background-color: rgba(255,255,255,0.8) !important;
+}
+
+/* 主行样式确保行高度一致 */
+.main-row {
+    min-height: 650px;
+    display: flex;
+}
+
+/* 列容器样式 */
+.column-container {
+    display: flex;
+    flex-direction: column;
+    height: 650px !important; /* 固定高度 */
+    max-height: 650px !important; /* 最大高度限制 */
+    min-height: 650px !important; /* 最小高度保证 */
+}
+
+/* 内容盒子样式 */
+.content-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 8px;
+    height: 100%;
+}
+
+/* 使"准备就绪"在容器中居中显示 */
+.ready-prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    text-align: center; /* 文本居中 */
+    height: 100%; /* 填充整个容器高度 */
+    width: 100%; /* 填充整个容器宽度 */
+    position: absolute; /* 绝对定位 */
+}
+
+.markdown-container {
+    width: 100%;  /* 使用百分比宽度以适应容器 */
+    height: 580px; /* 设置高度 */
+    max-height: 580px; /* 最大高度限制 */
+    background-color: #f1f5f9;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    line-height: 1.6;
+    overflow-y: auto; /* 添加垂直滚动条 */
+    border-radius: 6px;
+    padding: 0px;
+}
+
+.markdown-container h2 {
+    color: #2d3748;
+    font-weight: 700;
+    margin: 0.8em 0 0.8em;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.8em;
+}
+
+.markdown-container h3 {
+    font-size: 1.5em;
+    color: #2d3748;
+    font-weight: 700;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0.5em 0 0.5em;
+}
+
+.markdown-container code {
+    background: #f6f8fa;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: "SFMono-Regular", Consolas, monospace;
+    font-size: 0.9em;
+}
+
